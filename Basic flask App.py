@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-# declaration of th route
+# declaration of the route
 @app.route('/')
 def index():
     return '<h1>Hello World</h1>'
