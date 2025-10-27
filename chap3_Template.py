@@ -5,12 +5,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    mydict = {"a": 1, "b": 2}
+    return render_template('index.html', mydict=mydict)
 
 
 @app.route('/user/<name>')
 def user(name):
-    return render_template('user.html', name=name)
+    return render_template('user.html', user=name)
 
 
 if __name__ == "__main__":
