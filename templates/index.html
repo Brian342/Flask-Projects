@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    {% block head %}
-    <title>{% block title %}{% endblock %} -Flask Framework</title>
-    {% endblock %}
-</head>
-<body>
-    {% block body %}
-    <h1>Welcome!</h1>
-    {% endblock %}
-</body>
-</html>
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Flasky - Home{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to Flasky!</h1>
+</div>
+{% endblock %}
