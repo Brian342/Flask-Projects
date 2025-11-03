@@ -3,16 +3,6 @@ from flask import Flask, request, make_response, redirect, abort
 app = Flask(__name__)
 
 
-# declaration of the route
-# @app.route('/')
-# def index():
-#
-#     return '<h1>Hello World</h1>'
-# @app.route('/')
-# def index():
-#     user_agent = request.headers.get('User-Agent')
-#     return '<p> Your Browser is {}</p>'.format(user_agent)
-
 @app.route('/')
 def index():
     response = make_response('<h1>This document carries a cookie!</h1>')
