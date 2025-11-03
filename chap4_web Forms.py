@@ -4,6 +4,7 @@ from flask_moment import Moment
 from datetime import datetime
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'hard to guess string'
 Bootstrap = Bootstrap(app)
 moment = Moment(app)
 
