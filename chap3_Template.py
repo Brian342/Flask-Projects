@@ -8,10 +8,6 @@ bootstrap = Bootstrap(app)
 moment = Moment(app)
 
 
-# @app.route('/')
-# def index():
-#     mydict = {"a": 1, "b": 2}
-#     return render_template('index.html', mydict=mydict)
 @app.route('/')
 def index():
     return render_template('index.html', current_time=datetime.utcnow())
